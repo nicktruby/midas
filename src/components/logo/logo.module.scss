@@ -1,0 +1,32 @@
+@import '/src/styles/variables';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.companyName {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.svg {
+  width: 48px;
+}
+
+@media screen and (min-width: 568px) {
+  .companyName {
+    font-size: 1.5rem;
+  }
+  .svg {
+    width: 72px;
+  }
+  
+}

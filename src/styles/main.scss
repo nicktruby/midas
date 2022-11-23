@@ -1,4 +1,20 @@
-
 @import './reset';
 @import './variables';
 @import './mixins';
+@import './typography';
+@import './buttons';
+
+
+body {
+  background-color: $navy;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 112px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
