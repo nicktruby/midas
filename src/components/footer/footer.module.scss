@@ -1,3 +1,18 @@
-.root {
-  background: grey;
+@import '/src/styles/variables';
+
+.footer {
+  background-color: $navy;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 16px 24px;
+  text-align: right;
+
+  p {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
 }

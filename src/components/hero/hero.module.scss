@@ -1,0 +1,45 @@
+@import '/src/styles/variables';
+
+.hero {
+  position: relative;
+  background-color: $navy;
+  color: $white;
+  display: grid;
+  gap: 48px;
+  padding: 48px 10vw;
+  // justify-items: center;
+  align-items: center;
+
+  @media screen and (min-width: 568px) {
+    grid-template-columns: 55fr 45fr;
+  }
+  overflow: hidden;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+
+  button {
+    width: fit-content;
+    margin: 64px 0;
+  }
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+  object-fit: cover;
+  z-index: 1;
+
+  @media screen and (min-width: 568px) {
+    position: relative;
+    opacity: 100%;
+
+  }
+}

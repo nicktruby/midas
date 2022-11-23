@@ -1,7 +1,13 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
-import { Footer, Header } from '../components';
+import {
+  Footer,
+  Header,
+  Hero,
+  WhyMidas,
+  AboutUs,
+  Contact,
+} from '../components';
 
 const Index: NextPage = () => {
   return (
@@ -11,7 +17,10 @@ const Index: NextPage = () => {
       </Head>
 
       <main>
-        <h1>Welcome to Midas Leasing</h1>
+        <Hero />
+        <WhyMidas />
+        <AboutUs />
+        <Contact />
       </main>
     </>
   );

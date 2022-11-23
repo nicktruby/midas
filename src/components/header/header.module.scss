@@ -1,3 +1,63 @@
-.root {
-  background: blue;
+@import '/src/styles/variables';
+
+.header {
+  background-color: $navy;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
+
+.navbar {
+  &__list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+
+  &__item {
+    a {
+      background: none;
+      color: $white;
+      border: none;
+      border-radius: 100px;
+      padding: 12px 16px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    &_button a {
+      background: $blue;
+      margin-left: 24px;
+    }
+
+    &_link {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .header {
+    padding: 16px 24px;
+  }
+
+  .navbar__item {
+    a {
+      padding: 16px 24px;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__item {
+    &_link {
+      display: unset;
+    }
+  }
 }
